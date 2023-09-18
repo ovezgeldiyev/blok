@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" viewBox="0 0 44.12 28.24">
+  <defs>
+    <style>.cls-1,.cls-2{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:3px;}.cls-2{stroke-linecap:square;}</style>
+  </defs>
+  <g id="Layer_2-2">
+    <g id="Layer_1-2">
+      <g>
+        <line class="cls-1" y1="14.12" x2="42" y2="14.12"></line>
+        <polyline class="cls-2" points="30 2.12 42 14.12 30 26.12"></polyline>
+      </g>
+    </g>
+  </g>
+</svg>

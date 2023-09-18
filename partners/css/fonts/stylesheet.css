@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'BentonSans';
+    src: url('BentonSans-Regular.ttf') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BentonSans';
+    src: url('BentonSans-Medium.ttf') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BentonSans';
+    src: url('BentonSans-Bold.ttf') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BentonSans';
+    src: url('BentonSans-Black.ttf') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

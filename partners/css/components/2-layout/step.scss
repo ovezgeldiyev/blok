@@ -1,0 +1,11 @@
+.step {
+  background-color: rgb(133, 201, 206);
+  padding: 64px 0;
+  &__inner {
+    h2 {
+      color: $white;
+      text-align: center;
+      line-height: 110%;
+    }
+  }
+}

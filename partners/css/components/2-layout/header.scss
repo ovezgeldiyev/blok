@@ -1,0 +1,141 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  .auto__container {
+    padding: 0 20px;
+  }
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation-name: sticky;
+    animation-duration: 0.4s;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.16),
+      0 3px 12px 0 rgba(0, 0, 0, 0.12);
+    background-color: $white;
+    .header {
+      &__inner {
+        &-logo {
+          img {
+            display: none;
+            &.dark {
+              display: block;
+            }
+          }
+        }
+        a {
+          color: $main;
+          &::before {
+            background-color: $main;
+          }
+        }
+      }
+    }
+    .burger {
+      &::before {
+        background-color: $black;
+      }
+      &::after {
+        background-color: $black;
+      }
+      span {
+        background-color: $black;
+      }
+    }
+  }
+  &__inner {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 140px;
+      img {
+        width: 100%;
+        &.dark {
+          display: none;
+        }
+      }
+    }
+  }
+}
+// 1024px
+@mixin header-lg-xlg {
+  .header {
+    transition: .5s ease;
+    &.sticky {
+      .header {
+        &__inner {
+          a {
+            color: $black;
+            &::before {
+              background-color: unset;
+            }
+          }
+        }
+      }
+    }
+    &.active {
+      box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.16),
+        0 3px 12px 0 rgba(0, 0, 0, 0.12);
+      background-color: $white;
+      .header {
+        &__inner {
+          &-logo {
+            img {
+              display: none;
+              &.dark {
+                display: block;
+              }
+            }
+          }
+          a {
+            color: $black;
+            &::before {
+              background-color: unset;
+            }
+          }
+        }
+      }
+      .burger {
+        &::before {
+          background-color: $black;
+        }
+        &::after {
+          background-color: $black;
+        }
+        span {
+          background-color: $black;
+        }
+      }
+    }
+  }
+}
+// 750px
+@mixin header-sm-md {
+  .header {
+    &__inner {
+      height: 70px;
+      &-logo {
+        width: 92px;
+      }
+    }
+  }
+}
+@keyframes sticky {
+  0% {
+    top: -60px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}

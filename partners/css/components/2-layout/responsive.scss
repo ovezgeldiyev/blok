@@ -1,0 +1,225 @@
+// 1450px
+@include xxxxlg-xxxxxlg {
+    // @include hero-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+    h1 {
+        font-size: 70px;
+        line-height: 75px;
+        span {
+            font-size: 40px;
+        }
+    }
+    h2 {
+        font-size: 65px;
+    }
+    h3 {
+        font-size: 44px;
+    }
+    @include hero-xxxlg-xxxxlg;
+    @include contact-xxxlg-xxxxlg;
+}
+// 1250px
+@include xlg-xxlg-extra {
+    @include hero-xlg-xxlg-extra;
+}
+// 1180px
+@include xlg-xxlg {
+    .auto__container {
+        padding: 0 28px;
+    }
+    h1 {
+        font-size: 60px;
+        line-height: 65px;
+        span {
+            font-size: 36px;
+        }
+        b {
+            &::after {
+                top: 6px;
+                right: -6px;
+                font-size: 14px;
+            }
+        }
+    }
+    h2 {
+        font-size: 55px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+    h5 {
+        font-size: 33px;
+    }
+    p{
+        &.big {
+            font-size: 22px;
+        }
+    }
+    @include hero-xlg-xxlg;
+    @include feature-xlg-xxlg;
+    @include benefit-xlg-xxlg;
+    @include contact-xlg-xxlg;
+    @include footer-xlg-xxlg;
+
+}
+// 1024px
+@include lg-xlg {
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+    @include header-lg-xlg;
+    @include nav-lg-xlg;
+    @include hero-lg-xlg;
+    @include benefit-lg-xlg;
+    @include contact-lg-xlg;
+    @include newsletter-lg-xlg;
+    @include footer-lg-xlg;
+
+}
+// 930px
+@include md-lg {
+    .modals {
+        &__item {
+            padding: 20px;
+            &-close {
+                top: -40px;
+                right: 0;
+            }
+        }
+    }
+    .cookie {
+        &__inner {
+            p {
+                width: calc(100% - 160px);
+                font-size: 13px;
+            }
+            .button {
+                padding: 12px 24px;
+                font-size: 14px;
+                border-radius: 5px;
+            }
+        }
+    }
+    @include hero-md-lg;
+    @include feature-md-lg;
+    @include contact-md-lg;
+
+}
+// 840px
+@include md-lg-extra {
+    @include benefit-md-lg-extra;
+    @include newsletter-md-lg-extra;
+
+    // platform page
+    @include info-md-lg-extra;
+
+}
+// 750px
+@include sm-md {
+    h1 {
+        font-size: 50px;
+        line-height: 55px;
+        span {
+            font-size: 32px;
+        }
+    }
+    h2 {
+        font-size: 45px;
+    }
+    h3 {
+        font-size: 36px;
+    }
+    h5 {
+        font-size: 28px;
+    }
+    p{
+        &.big {
+            font-size: 19px;
+        }
+    }
+    .cookie {
+        padding: 12px 0;
+        .auto__container {
+            padding: 0 20px;
+        }
+        &__inner {
+            flex-direction: column;
+            align-items: flex-end;
+            p {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    @include header-sm-md;
+    @include nav-sm-md;
+    @include hero-sm-md;
+    @include feature-sm-md;
+    @include footer-sm-md;
+
+}
+// 650px
+@include sm-md-extra {
+    @include hero-sm-md-extra;
+}
+// 540px
+@include xsm-sm  {
+    h1 {
+        font-size: 40px;
+        line-height: 45px;
+        span {
+            font-size: 28px;
+        }
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 32px;
+    }
+    h4 {
+        font-size: 28px;
+    }
+    h5 {
+        font-size: 24px;
+    }
+    .modals {
+        &__item {
+            padding: 20px 6px;
+            &-close {
+                width: 20px;
+                height: 20px;
+                top: -30px;
+                right: 0;
+            }
+            &-video {
+                padding-bottom: 60%;
+            }
+        }
+    }
+    .step {
+        padding: 48px 0;
+    }
+    @include hero-xsm-sm;
+    @include feature-xsm-sm;
+    @include partner-xsm-sm;
+    @include benefit-xsm-sm;
+    @include contact-xsm-sm;
+    @include footer-xsm-sm;
+
+    // platform page
+    @include info-xsm-sm;
+
+}
+// 440px
+@include xxsm-xsm  {
+    @include hero-xxsm-xsm;
+}
+// 390px
+@include xxxsm-xxsm  {
+    // @include hero-xxxsm-xxsm;
+}
+
