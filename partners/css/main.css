@@ -166,6 +166,24 @@ p.big {
   line-height: 170%;
 }
 
+.title2 {
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.paragraph {
+  font-size: 23px;
+  line-height: 160%;
+}
+.paragraph.ex {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 130%;
+}
+
 .main {
   overflow: hidden;
 }
@@ -192,7 +210,17 @@ p.big {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
+.button.primary {
+  background-color: #70C2C7;
+  padding: 14px 30px;
+  font-size: 21px;
+  line-height: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 .button:hover {
+  opacity: 1;
   background-color: #060c3b;
 }
 
@@ -268,7 +296,7 @@ p.big {
 .quote__text::before {
   position: absolute;
   content: "";
-  background-image: url("../images/icons/quotation-start.svg");
+  background-image: url("../../images/icons/quotation-start.svg");
   width: 40px;
   height: 40px;
   top: 0;
@@ -277,7 +305,7 @@ p.big {
 .quote__text:after {
   position: absolute;
   content: "";
-  background-image: url("../images/icons/quotation-end.svg");
+  background-image: url("../../images/icons/quotation-end.svg");
   width: 40px;
   height: 40px;
   bottom: 0;
@@ -465,6 +493,78 @@ p.big {
   content: "";
 }
 
+.uinput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.uinput__outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 12px;
+}
+.uinput__outer.active input {
+  -webkit-box-shadow: inset 2px 0 0 0 #e04562;
+          box-shadow: inset 2px 0 0 0 #e04562;
+}
+.uinput__outer.active span {
+  display: block;
+  -webkit-animation: fadeIn 0.3s;
+          animation: fadeIn 0.3s;
+}
+.uinput__outer span {
+  font-size: 14px;
+  line-height: 100%;
+  padding: 9px 10px;
+  margin-top: 5px;
+  display: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background-color: #f9e4e8;
+  color: #e04562;
+}
+.uinput input {
+  width: 100%;
+  height: 100%;
+  padding: 10px 12px;
+  border-radius: 5px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #f9f9f9;
+  color: #000;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.uinput input::-webkit-input-placeholder {
+  color: #636c72;
+}
+.uinput input::-moz-placeholder {
+  color: #636c72;
+}
+.uinput input:-ms-input-placeholder {
+  color: #636c72;
+}
+.uinput input::-ms-input-placeholder {
+  color: #636c72;
+}
+.uinput input::placeholder {
+  color: #636c72;
+}
+
 .scrollUp {
   position: fixed;
   bottom: -1px;
@@ -520,7 +620,8 @@ p.big {
   display: -ms-flexbox;
   display: flex;
 }
-.modals__item.active .modals__item-video video, .modals__item.active .modals__item-video iframe {
+.modals__item.active .modals__item-video video,
+.modals__item.active .modals__item-video iframe {
   display: block;
 }
 .modals__item-close {
@@ -1546,6 +1647,300 @@ p.big {
   width: 100%;
 }
 
+.uhome {
+  position: relative;
+  padding: 280px 0 220px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.uhome::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: #060c3b;
+  opacity: 0.6;
+  z-index: 2;
+  pointer-events: none;
+}
+.uhome.sm {
+  padding: 100px 0;
+  background: url("../../images/mortgage/2.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.uhome.sm .uhome__inner-content {
+  margin: 0 0 0 auto;
+}
+.uhome.part {
+  padding: 150px 0;
+  background: url("../../images/mortgage/5.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.uhome.part .uhome__inner-content {
+  max-width: 750px;
+}
+.uhome.mid {
+  padding: 170px 0;
+}
+.uhome .auto__container {
+  max-width: 1180px;
+}
+.uhome__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  pointer-events: none;
+}
+.uhome__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+.uhome__inner {
+  position: relative;
+  z-index: 3;
+}
+.uhome__inner-content {
+  max-width: 728px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.uhome__inner-content.sm {
+  max-width: 640px;
+}
+.uhome__inner-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 30px;
+}
+.uhome__inner-row .paragraph {
+  width: 50%;
+  padding-right: 20px;
+  border-right: 1px solid #70C2C7;
+  margin: 0 !important;
+  line-height: 140%;
+}
+.uhome__inner-row .paragraph:last-child {
+  border: unset;
+  padding: 0 0 0 20px;
+}
+.uhome__inner .title2 {
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.uhome__inner .paragraph {
+  width: 100%;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.uhome__inner .paragraph:last-child {
+  margin-bottom: 0;
+}
+.uhome__inner .paragraph span {
+  color: #70C2C7;
+}
+.uhome__inner .button {
+  margin-top: 30px;
+}
+
+.uchoice {
+  background: url("../../images/mortgage/3.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 3;
+  padding: 100px 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.uchoice::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: #060c3b;
+  opacity: 0.45;
+  z-index: 1;
+  pointer-events: none;
+}
+.uchoice .auto__container {
+  max-width: 904px;
+}
+.uchoice__inner {
+  max-width: 824px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+.uchoice__inner-title {
+  text-align: center;
+  margin-bottom: 66px;
+}
+.uchoice__inner-title .paragraph {
+  color: #70C2C7;
+}
+.uchoice__inner-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.uchoice__inner .title2 {
+  margin-bottom: 30px;
+  color: #fff;
+}
+.uchoiceItem {
+  width: calc(50% - 20px);
+  margin: 13px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.uchoiceItem__icon {
+  width: 75px;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+.uchoiceItem__icon img {
+  width: 100%;
+}
+.uchoiceItem .paragraph {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.uabout {
+  padding: 100px 0;
+  position: relative;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+}
+.uabout::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: #060c3b;
+  opacity: 0.6;
+  z-index: 2;
+  pointer-events: none;
+}
+.uabout .auto__container {
+  max-width: 1180px;
+}
+.uabout__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  pointer-events: none;
+}
+.uabout__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+}
+.uabout__inner {
+  position: relative;
+  z-index: 2;
+}
+.uabout__inner-title {
+  max-width: 900px;
+  margin-bottom: 60px;
+}
+.uabout__inner-form {
+  max-width: 432px;
+  margin: 0 0 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.uabout__inner-form > .paragraph {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.uabout__inner .uinput__outer {
+  width: 100%;
+}
+.uabout__inner .button {
+  width: 100%;
+  max-width: 195px;
+  margin-top: 10px;
+}
+.uabout__inner .title2 {
+  color: #fff;
+}
+
 @media (max-width: 1380px) {
   h1 {
     font-size: 70px;
@@ -1561,6 +1956,14 @@ p.big {
 
   h3 {
     font-size: 44px;
+  }
+
+  .title2 {
+    font-size: 60px;
+  }
+
+  .paragraph.ex {
+    font-size: 26px;
   }
 
   .contact__inner-form {
@@ -1599,6 +2002,18 @@ p.big {
 
   p.big {
     font-size: 22px;
+  }
+
+  .title2 {
+    font-size: 50px;
+  }
+
+  .paragraph {
+    font-size: 21px;
+    line-height: 140%;
+  }
+  .paragraph.ex {
+    font-size: 24px;
   }
 
   .feature__inner {
@@ -1677,6 +2092,10 @@ p.big {
 @media (max-width: 1024px) {
   ::-webkit-scrollbar {
     display: none;
+  }
+
+  .title2 {
+    font-size: 45px;
   }
 
   .header {
@@ -1988,6 +2407,10 @@ p.big {
   }
 }
 @media (max-width: 930px) {
+  .title2 {
+    font-size: 40px;
+  }
+
   .modals__item {
     padding: 20px;
   }
@@ -2195,6 +2618,22 @@ p.big {
     font-size: 19px;
   }
 
+  .title2 {
+    font-size: 35px;
+  }
+
+  .paragraph {
+    font-size: 18px;
+  }
+  .paragraph.ex {
+    font-size: 20px;
+  }
+
+  .button.primary {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+
   .cookie {
     padding: 12px 0;
   }
@@ -2325,6 +2764,10 @@ p.big {
     font-size: 24px;
   }
 
+  .title2 {
+    font-size: 30px;
+  }
+
   .modals__item {
     padding: 20px 6px;
   }
@@ -2336,6 +2779,12 @@ p.big {
   }
   .modals__item-video {
     padding-bottom: 60%;
+  }
+
+  .uinput input {
+    font-size: 17px;
+    line-height: 20px;
+    padding: 8px 10px;
   }
 
   .step {
@@ -2466,5 +2915,84 @@ p.big {
   .info__inner .table tr td > span {
     width: 25px;
     height: 25px;
+  }
+
+  .uhome {
+    padding: 250px 0 200px;
+  }
+  .uhome.sm {
+    background-attachment: scroll;
+    padding: 80px 0;
+  }
+  .uhome.part {
+    background-attachment: scroll;
+    padding: 120px 0;
+  }
+  .uhome.mid {
+    padding: 140px 0;
+  }
+  .uhome__inner-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 20px;
+  }
+  .uhome__inner-row .paragraph {
+    border: unset;
+    padding: 0;
+    margin-bottom: 10px !important;
+  }
+  .uhome__inner-row .paragraph:last-child {
+    padding: 0;
+    margin: 0 !important;
+  }
+  .uhome__inner .title2 {
+    margin-bottom: 18px;
+  }
+  .uhome__inner .paragraph {
+    margin-bottom: 10px;
+  }
+  .uhome__inner .button {
+    margin-top: 20px;
+  }
+
+  .uchoice {
+    background-attachment: scroll;
+  }
+  .uchoice__inner-title {
+    margin-bottom: 40px;
+  }
+  .uchoice__inner-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .uchoice__inner .title2 {
+    margin-bottom: 18px;
+  }
+  .uchoice__inner .paragraph {
+    font-size: 20px;
+  }
+  .uchoice__inner .paragraph.ex {
+    font-size: 24px;
+  }
+  .uchoiceItem {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+  .uchoiceItem:last-child {
+    margin: 0;
+  }
+
+  .uabout__inner-title {
+    margin-bottom: 40px;
+  }
+  .uabout__inner .button {
+    max-width: 160px;
   }
 }

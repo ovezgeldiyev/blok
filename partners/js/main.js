@@ -78,7 +78,6 @@ var wow = new WOW({
 wow.init();
 // wow end
 
-
 if (localStorage.getItem("cookieSeen") === "shown") {
   $("#cookieNotice").delay(2000).fadeIn();
   localStorage.setItem("cookieSeen", "shown");
@@ -87,3 +86,18 @@ $("#cookieClose").click(function () {
   $("#cookieNotice").fadeOut();
 });
 
+const partnerForm = document.getElementById("partnerForm");
+if (partnerForm) {
+  const inputs = partnerForm.querySelectorAll("input");
+  inputs.forEach((input) => {
+    if (input.hasAttribute("required")) {
+      input.onblur = () => {
+        if (input.value === "") {
+          input.parentElement.parentElement.classList.add("active");
+        } else {
+          input.parentElement.parentElement.classList.remove("active");
+        }
+      };
+    }
+  });
+}
